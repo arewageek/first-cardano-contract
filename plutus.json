@@ -1,0 +1,154 @@
+{
+  "preamble": {
+    "title": "arewageek/first-cardano-contract",
+    "description": "Aiken contracts for project 'arewageek/first-cardano-contract'",
+    "version": "0.0.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.15+f03633e"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "always.always.mint",
+      "redeemer": {
+        "title": "_r",
+        "schema": {
+          "$ref": "#/definitions/cardano~1transaction~1Redeemer"
+        }
+      },
+      "compiledCode": "588401010029800aba2aba1aab9eaab9dab9a48888966002646465300130053754003300700398038012444b30013370e9000001c4c9289bae300a3009375400915980099b874800800e26464b30013370e900018051baa300c300d0028a518a504024601600260126ea80122c80390070c018c01c004c018004c00cdd5003452689b2b20021",
+      "hash": "7caa107893fff6846db8e4981e4d4cac2342d794931e1b4e84cfd08d"
+    },
+    {
+      "title": "always.always.spend",
+      "datum": {
+        "title": "d",
+        "schema": {
+          "$ref": "#/definitions/cardano~1transaction~1Datum"
+        }
+      },
+      "redeemer": {
+        "title": "_r",
+        "schema": {
+          "$ref": "#/definitions/cardano~1transaction~1Redeemer"
+        }
+      },
+      "compiledCode": "588401010029800aba2aba1aab9eaab9dab9a48888966002646465300130053754003300700398038012444b30013370e9000001c4c9289bae300a3009375400915980099b874800800e26464b30013370e900018051baa300c300d0028a518a504024601600260126ea80122c80390070c018c01c004c018004c00cdd5003452689b2b20021",
+      "hash": "7caa107893fff6846db8e4981e4d4cac2342d794931e1b4e84cfd08d"
+    },
+    {
+      "title": "always.always.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "588401010029800aba2aba1aab9eaab9dab9a48888966002646465300130053754003300700398038012444b30013370e9000001c4c9289bae300a3009375400915980099b874800800e26464b30013370e900018051baa300c300d0028a518a504024601600260126ea80122c80390070c018c01c004c018004c00cdd5003452689b2b20021",
+      "hash": "7caa107893fff6846db8e4981e4d4cac2342d794931e1b4e84cfd08d"
+    },
+    {
+      "title": "always.alwaysW.withdraw",
+      "redeemer": {
+        "title": "_r",
+        "schema": {
+          "$ref": "#/definitions/cardano~1transaction~1Redeemer"
+        }
+      },
+      "compiledCode": "585301010029800aba2aba1aab9eaab9dab9a4888896600264653001300600198031803800cc0180092225980099b8748010c01cdd500144c928980498041baa0028b200c180300098019baa0068a4d13656400401",
+      "hash": "4ab26c95029067185f709d140300cccb15b0b20bbd62a7e9aa2e2e10"
+    },
+    {
+      "title": "always.alwaysW.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "585301010029800aba2aba1aab9eaab9dab9a4888896600264653001300600198031803800cc0180092225980099b8748010c01cdd500144c928980498041baa0028b200c180300098019baa0068a4d13656400401",
+      "hash": "4ab26c95029067185f709d140300cccb15b0b20bbd62a7e9aa2e2e10"
+    },
+    {
+      "title": "always.vestingTokens.mint",
+      "redeemer": {
+        "title": "_r",
+        "schema": {
+          "$ref": "#/definitions/cardano~1transaction~1Redeemer"
+        }
+      },
+      "compiledCode": "58e101010029800aba2aba1aba0aab9faab9eaab9dab9a48888889660026464646644b30013370e900000144c96600266e1d20003008375464660020026eb0c034c038c038c028dd51806803912cc0040062980103d87a80008992cc004cdd7980798061baa300f300c375400266e9520023300e375200897ae0899ba548000cc0380052f5c113300300330100024028601c002806229462c8038dd7180598041baa0038acc004cdc3a400400513233224a260180026018601a00260106ea800e2c803100618029baa001300900230083009001300800130033754011149a26cac8009",
+      "hash": "704a59d05e64740e0cb03c9887152df5199137320e91bbf49bf81d54"
+    },
+    {
+      "title": "always.vestingTokens.spend",
+      "datum": {
+        "title": "_d",
+        "schema": {
+          "$ref": "#/definitions/cardano~1transaction~1Datum"
+        }
+      },
+      "redeemer": {
+        "title": "_r",
+        "schema": {
+          "$ref": "#/definitions/cardano~1transaction~1Redeemer"
+        }
+      },
+      "compiledCode": "58e101010029800aba2aba1aba0aab9faab9eaab9dab9a48888889660026464646644b30013370e900000144c96600266e1d20003008375464660020026eb0c034c038c038c028dd51806803912cc0040062980103d87a80008992cc004cdd7980798061baa300f300c375400266e9520023300e375200897ae0899ba548000cc0380052f5c113300300330100024028601c002806229462c8038dd7180598041baa0038acc004cdc3a400400513233224a260180026018601a00260106ea800e2c803100618029baa001300900230083009001300800130033754011149a26cac8009",
+      "hash": "704a59d05e64740e0cb03c9887152df5199137320e91bbf49bf81d54"
+    },
+    {
+      "title": "always.vestingTokens.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "58e101010029800aba2aba1aba0aab9faab9eaab9dab9a48888889660026464646644b30013370e900000144c96600266e1d20003008375464660020026eb0c034c038c038c028dd51806803912cc0040062980103d87a80008992cc004cdd7980798061baa300f300c375400266e9520023300e375200897ae0899ba548000cc0380052f5c113300300330100024028601c002806229462c8038dd7180598041baa0038acc004cdc3a400400513233224a260180026018601a00260106ea800e2c803100618029baa001300900230083009001300800130033754011149a26cac8009",
+      "hash": "704a59d05e64740e0cb03c9887152df5199137320e91bbf49bf81d54"
+    }
+  ],
+  "definitions": {
+    "Data": {
+      "title": "Data",
+      "description": "Any Plutus data."
+    },
+    "aiken/crypto/DataHash": {
+      "title": "DataHash",
+      "dataType": "bytes"
+    },
+    "cardano/transaction/Datum": {
+      "title": "Datum",
+      "description": "An output `Datum`.",
+      "anyOf": [
+        {
+          "title": "NoDatum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        },
+        {
+          "title": "DatumHash",
+          "description": "A datum referenced by its hash digest.",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": [
+            {
+              "$ref": "#/definitions/aiken~1crypto~1DataHash"
+            }
+          ]
+        },
+        {
+          "title": "InlineDatum",
+          "description": "A datum completely inlined in the output.",
+          "dataType": "constructor",
+          "index": 2,
+          "fields": [
+            {
+              "$ref": "#/definitions/Data"
+            }
+          ]
+        }
+      ]
+    },
+    "cardano/transaction/Redeemer": {
+      "title": "Redeemer",
+      "description": "Any Plutus data."
+    }
+  }
+}
